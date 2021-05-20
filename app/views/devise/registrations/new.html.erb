@@ -21,8 +21,43 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.search_field :first_name, autocomplete: "first_name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.search_field :last_name, autocomplete: "last_name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone_number %><br />
+    <%= f.telephone_field :phone_number, autocomplete: "1234567899" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :street_address %><br />
+    <%= f.search_field :street_address, autocomplete: "123 Mystery Lane" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.search_field :city, autocomplete: "My Town" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.search_field :state, autocomplete: "WV" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :zip %><br />
+    <%= f.search_field :zip, autocomplete: "65432" %>
+  </div>
+
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign Up" %>
   </div>
 <% end %>
 
