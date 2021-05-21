@@ -32,11 +32,11 @@ ActiveRecord::Schema.define(version: 2021_05_19_191534) do
     t.string "unconfirmed_email"
     t.string "first_name", null: false
     t.string "last_name", null: false
-    t.integer "phone_number", null: false
+    t.string "phone_number", null: false
     t.string "street_address", null: false
     t.string "city", null: false
     t.string "state", null: false
-    t.integer "zip", null: false
+    t.string "zip", null: false
     t.integer "role", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -44,4 +44,5 @@ ActiveRecord::Schema.define(version: 2021_05_19_191534) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
+
 end
